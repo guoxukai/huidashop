@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>huidashop</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ShopUserServlet</display-name>
+    <servlet-name>ShopUserServlet</servlet-name>
+    <servlet-class>com.huida.shop.user.controller.ShopUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShopUserServlet</servlet-name>
+    <url-pattern>/shopqt/user/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ImgValidateCodeServlet</display-name>
+    <servlet-name>ImgValidateCodeServlet</servlet-name>
+    <servlet-class>com.huida.web.ImgValidateCodeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ImgValidateCodeServlet</servlet-name>
+    <url-pattern>/imgvalidatecode</url-pattern>
+  </servlet-mapping>
+</web-app>
